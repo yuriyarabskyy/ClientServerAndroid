@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key = "ipconfig"
+        android:title = "IpAddress"
+        android:summary = "IpAddress to which you connect"
+        android:defaultValue = "192.168.1.0"/>
+    <EditTextPreference
+        android:key = "tcpconfig"
+        android:title="TCP"
+        android:summary="TCP Port"
+        android:defaultValue="8080" />
+</PreferenceScreen>
