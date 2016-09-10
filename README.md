@@ -61,7 +61,7 @@ For these tests we need the Android Testing Support Library, which includes the 
 
 Code to add into build.gradle:
 
-```gradle
+```java
 dependencies {
     androidTestCompile 'com.android.support:support-annotations:24.0.0'
     androidTestCompile 'com.android.support.test:runner:0.5'
