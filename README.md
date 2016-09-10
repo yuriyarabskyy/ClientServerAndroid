@@ -59,7 +59,7 @@ Instrumented tests are built into an APK that runs on the device alongside your 
 
 For these tests we need the Android Testing Support Library, which includes the AndroidJUnitRunner and APIs for functional UI tests (Espresso).
 
-Code to add into build.gradle:
+Code to add into build.gradle.
 
 ```gradle
 dependencies {
@@ -72,6 +72,11 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
       exclude group: 'com.android.support', module: 'support-annotations'
     })
+}
+android {
+    defaultConfig {
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
 }
 ```
 
