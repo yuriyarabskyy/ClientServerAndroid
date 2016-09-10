@@ -73,11 +73,6 @@ dependencies {
       exclude group: 'com.android.support', module: 'support-annotations'
     })
 }
-android {
-    defaultConfig {
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-}
 ```
 
 Tests can be grouped into suites and run together.
