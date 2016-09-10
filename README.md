@@ -61,7 +61,7 @@ For these tests we need the Android Testing Support Library, which includes the 
 
 Code to add into build.gradle:
 
-```java
+```gradle
 dependencies {
     androidTestCompile 'com.android.support:support-annotations:24.0.0'
     androidTestCompile 'com.android.support.test:runner:0.5'
@@ -72,8 +72,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
       exclude group: 'com.android.support', module: 'support-annotations'
     })
-    // Optional -- UI testing with UI Automator
-    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
 }
 android {
     defaultConfig {
